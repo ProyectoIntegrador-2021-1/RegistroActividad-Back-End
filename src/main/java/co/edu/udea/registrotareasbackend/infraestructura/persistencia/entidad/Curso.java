@@ -7,6 +7,7 @@ import javax.persistence.*;
 @Entity
 @Table(name = "curso")
 @AllArgsConstructor
+@Builder
 @NoArgsConstructor
 @Getter
 @Setter
