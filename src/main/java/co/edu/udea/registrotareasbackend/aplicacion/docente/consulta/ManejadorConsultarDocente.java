@@ -1,6 +1,7 @@
 package co.edu.udea.registrotareasbackend.aplicacion.docente.consulta;
 
 import co.edu.udea.registrotareasbackend.dominio.Docente;
+import co.edu.udea.registrotareasbackend.infraestructura.persistencia.builder.DocenteBuilder;
 import co.edu.udea.registrotareasbackend.infraestructura.persistencia.repositorio.RepositorioDocente;
 import org.springframework.stereotype.Component;
 
@@ -14,8 +15,6 @@ public class ManejadorConsultarDocente {
         this.repositorioDocente = repositorioDocente;
     }
     public List<Docente> ejecutar(){
-       // return this.repositorioDocente.findAll();
-        //TODO hacer builder
-        return null;
+     return DocenteBuilder.convertirAListaDeDominio(this.repositorioDocente.findAll());
     }
 }
