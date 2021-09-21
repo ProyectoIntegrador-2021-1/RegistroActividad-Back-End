@@ -1,4 +1,4 @@
-package co.edu.udea.registrotareasbackend.infraestructura.util;
+package co.edu.udea.registrotareasbackend.util;
 
 import org.springframework.core.Ordered;
 import org.springframework.core.annotation.Order;

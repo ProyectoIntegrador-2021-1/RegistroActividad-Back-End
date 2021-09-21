@@ -33,7 +33,6 @@ public class ActividadEntity {
     private Date fechaFin;
 
     @OneToOne
-    @JoinColumn(name = "id", referencedColumnName = "id")
     private CursoEntity curso;
 
     @Column(name = "estado")

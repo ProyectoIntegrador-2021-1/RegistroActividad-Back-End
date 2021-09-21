@@ -31,7 +31,6 @@ public class CursoEntity {
     private Integer totalHoras;
 
     @OneToOne
-    @JoinColumn(referencedColumnName = "id")
     private GrupoEntity grupo;
 
     @Column(name = "estado")
