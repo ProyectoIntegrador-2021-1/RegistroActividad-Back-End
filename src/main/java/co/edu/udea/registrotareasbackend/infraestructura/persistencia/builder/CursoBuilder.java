@@ -11,6 +11,7 @@ public class CursoBuilder {
     public static CursoEntity convertirAEntity(Curso curso) {
         CursoEntity cursoEntity = new CursoEntity();
         cursoEntity.setGrupo(GrupoBuilder.convertirAEntity(curso.getGrupo()));
+        cursoEntity.setId(curso.getId());
         cursoEntity.setNombre(curso.getNombre());
         cursoEntity.setCodigo(curso.getCodigo());
         cursoEntity.setEstado(curso.getEstado());
