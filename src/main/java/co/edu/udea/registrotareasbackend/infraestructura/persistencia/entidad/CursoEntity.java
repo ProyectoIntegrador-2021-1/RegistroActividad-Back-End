@@ -12,14 +12,27 @@ import javax.persistence.*;
 @Getter
 @Setter
 @ToString
-public class Curso {
+public class CursoEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
+    @Column(name = "codigo")
+    private String codigo;
+
     @Column(name = "nombre")
     private String nombre;
+
+    @Column(name = "numero_creditos")
+    private Integer numeroCreditos;
+
+    @Column(name = "total_horas")
+    private Integer totalHoras;
+
+    @OneToOne
+    @JoinColumn(referencedColumnName = "id_grupo")
+    private GrupoEntity grupo;
 
     @Column(name = "estado")
     private Boolean estado;
