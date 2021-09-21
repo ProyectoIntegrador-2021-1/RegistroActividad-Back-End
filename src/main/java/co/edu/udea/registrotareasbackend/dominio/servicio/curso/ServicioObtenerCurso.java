@@ -1,2 +1,4 @@
-package co.edu.udea.registrotareasbackend.dominio.servicio.curso;public class ServicioObtenerCurso {
+package co.edu.udea.registrotareasbackend.dominio.servicio.curso;
+
+public class ServicioObtenerCurso {
 }

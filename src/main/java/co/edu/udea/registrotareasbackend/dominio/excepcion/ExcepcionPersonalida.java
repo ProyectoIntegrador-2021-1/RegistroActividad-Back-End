@@ -1,10 +1,10 @@
 package co.edu.udea.registrotareasbackend.dominio.excepcion;
 
-public class PrestamoException extends RuntimeException {
+public class ExcepcionPersonalida extends RuntimeException {
 
     private static final long serialVersionUID = 1L;
 
-    public PrestamoException(String message) {
+    public ExcepcionPersonalida(String message) {
         super(message);
     }
 }

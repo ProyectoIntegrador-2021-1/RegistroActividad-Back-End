@@ -2,11 +2,13 @@ package co.edu.udea.registrotareasbackend.aplicacion.semestre.consulta;
 
 import co.edu.udea.registrotareasbackend.dominio.Semestre;
 import co.edu.udea.registrotareasbackend.dominio.servicio.semestre.ServicioObtenerSemestre;
+import org.springframework.stereotype.Component;
 
-public class ManejadorConsultarPorId {
+@Component
+public class ManejadorConsultarSemestrePorId {
     private final ServicioObtenerSemestre servicioObtenerSemestre;
 
-    public ManejadorConsultarPorId(ServicioObtenerSemestre servicioObtenerSemestre) {
+    public ManejadorConsultarSemestrePorId(ServicioObtenerSemestre servicioObtenerSemestre) {
         this.servicioObtenerSemestre = servicioObtenerSemestre;
     }
 
