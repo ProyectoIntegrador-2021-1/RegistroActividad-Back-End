@@ -9,7 +9,11 @@ import java.util.List;
 public class ActividadesBuilder {
     public static ActividadEntity convertirAEntity(Actividades actividades) {
         ActividadEntity entity = new ActividadEntity();
-
+        entity.setDescripcion(actividades.getDescripcion());
+        entity.setTitulo(actividades.getTitulo());
+        entity.setFechaInicio(actividades.getFechaInicio());
+        entity.setFechaFin(actividades.getFechaFin());
+        entity.setEstado(actividades.getEstado());
         entity.setCurso(CursoBuilder.convertirAEntity(actividades.getCurso()));
         return entity;
     }
