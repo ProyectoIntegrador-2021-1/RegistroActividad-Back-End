@@ -5,6 +5,7 @@ import co.edu.udea.registrotareasbackend.dominio.Docente;
 import co.edu.udea.registrotareasbackend.infraestructura.persistencia.entidad.DocenteEntity;
 import co.edu.udea.registrotareasbackend.infraestructura.persistencia.entidad.GrupoEntity;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class DocenteBuilder {
@@ -22,11 +23,13 @@ public class DocenteBuilder {
         Docente docente = new Docente(docenteEntity.getId(), docenteEntity.getEspecialidad(), docenteEntity.getArea(),
                 PersonaBuilder.convertirEntityADominio(docenteEntity.getPersona()),
                 GrupoBuilder.convertirAListaDominio(docenteEntity.getGrupo()));
-        return null;
+        return docente;
     }
 
 
     public static List<Docente> convertirAListaDeDominio(List<DocenteEntity> all) {
-        return null;
+      List<Docente> listaDocente = new ArrayList<Docente>();
+        all.stream().forEach(docenteEntity -> listaDocente.add(DocenteBuilder.convertirADominio(docenteEntity)));
+        return listaDocente;
     }
 }

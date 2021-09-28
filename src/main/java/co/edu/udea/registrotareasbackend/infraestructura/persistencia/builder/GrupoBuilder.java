@@ -20,7 +20,12 @@ public class GrupoBuilder {
 
 
     public static List<Grupo> convertirAListaDominio(List<GrupoEntity> grupo) {
-        return null;
+       List<Grupo> listaGrupo = new ArrayList<Grupo>();
+       grupo.stream().forEach(grupo1 -> {
+          listaGrupo.add(GrupoBuilder.convertirADominio(grupo1));
+       });
+
+        return listaGrupo;
     }
 
     public static GrupoEntity convertirAEntity(Grupo grupo) {

@@ -19,6 +19,7 @@ public class Docente {
         Validador.validarObjecto(persona,"");
         Validador.validarObjecto(grupo,"");
         Validador.validarString(especialidad, "");
+        this.id = id;
         this.especialidad = especialidad;
         this.area = area;
         this.persona = persona;

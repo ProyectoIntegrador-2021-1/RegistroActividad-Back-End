@@ -13,6 +13,7 @@ public class Actividades {
     private Date fechaInicio;
     private Date fechaFin;
     private Curso curso;
+    private Boolean estado;
 
     public Actividades(Long id, String titulo, String descripcion, Date fechaInicio, Date fechaFin, Curso curso) {
         this.id = id;

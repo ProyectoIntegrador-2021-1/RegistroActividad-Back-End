@@ -24,6 +24,7 @@ public class Persona {
         this.id = id;
         this.nombres = nombres;
         this.apellidos = apellidos;
+        this.identificacion = identificacion;
         this.correo = correo;
         this.telefono = telefono;
         this.genero = genero;
